@@ -1,0 +1,15 @@
+faiss-cpu
+langchain
+langchain-community
+langchain-experimental
+langchain-groq
+langchain-huggingface
+matplotlib
+numpy
+pandas
+requests
+scikit-learn
+seaborn
+tqdm
+uvicorn
+pydantic

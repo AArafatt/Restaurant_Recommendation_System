@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  jupyter:
+    build: .
+    container_name: jupyter_notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebook:/workspace/notebook
+      - ./models:/workspace/models
+      - ./data:/workspace/data
+      - ./zomato_cleaned_features.csv:/workspace/zomato_cleaned_features.csv
+      - ./zomato_meta.pkl:/workspace/zomato_meta.pkl
+      - ./zomato_restaurants_with_clusters.csv:/workspace/zomato_restaurants_with_clusters.csv
+      - ./zomato.faiss:/workspace/zomato.faiss
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
