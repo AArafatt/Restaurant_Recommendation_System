@@ -171,4 +171,4 @@ pytest test_setup.py
 
 # Streamlit UI
 
-<img src="streamlit_UI.png" alt="Streamlit UI" width="800"/>
+<img src="streamlit/streamlit_UI.png" alt="Streamlit UI" width="800"/>
