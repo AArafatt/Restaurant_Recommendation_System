@@ -168,3 +168,7 @@ pytest test_setup.py
 - Update `.env` for different API keys or model configurations.
 
 ---
+
+# Streamlit UI
+
+<img src="streamlit_UI.png" alt="Streamlit UI" width="800"/>
